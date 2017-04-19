@@ -33,17 +33,19 @@ function sumAdjacents() {
 	}
 	alert("The sum of adjacent numbers is " + count + ".");
 }
-	
-	//Exercise 4: Multiplication of adjacent numbers
-	function multiplyAdjacents() {
-		var n = Number(prompt("I'll calculate factorial (e.g. You give me 5, I'll give you: 1*2*3*4*5 = 120). Type in one number.").trim());
-		var count = 1;
-		for (var i = 1; i<=n; i++) {
-		count = count * i;
+sumAdjacents();
 
-		}
-	alert("Factorial is" + count + ".");
+//Exercise 4: Multiplication of adjacent numbers
+function multiplyAdjacents() {
+	var n = Number(prompt("I'll calculate factorial (e.g. You give me 5, I'll give you: 1*2*3*4*5 = 120). Type in one number.").trim());
+	var count = 1;
+	for (var i = 1; i<=n; i++) {
+	count = count * i;
+
 	}
+	alert("Factorial is" + count + ".");
+}
+multiplyAdjacents();
 
 //Exercise 4: Calculate how many pieces of something we can buy with the money we have.
 function budgetCalc() 
@@ -52,6 +54,7 @@ function budgetCalc()
 	var y = Number(prompt("How much does the thing you want to buy cost?").trim());
 	alert("You can buy the product " + x / y + " times.");
 }
+budgetCalc();
 //budgetCalc sa casa
 //function kolikoKomada(stanje, cena) {
 // 	return Math.floor(stanje/cena);
@@ -70,8 +73,10 @@ function sumMinMax() {
 		}
 		alert(count);
 	}
-		else {
+	
+	else {
 			alert("The first number should be smaller than the second number.");
-		}
+	}
 }
 
+sumMinMax();
