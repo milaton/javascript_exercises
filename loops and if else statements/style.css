@@ -1,0 +1,58 @@
+body {
+	background-color: AliceBlue;
+	font-family: Helvetica;
+}
+
+h1 {
+text-align: center;
+}
+
+article {
+	margin: auto;
+    width: 960px;
+}
+
+div {
+	width: 200px;
+	float: left;
+	border: solid grey 1px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding:0 7px;
+}
+
+p {
+	text-align: center;
+}
+
+button {
+	width: 50px;
+	position:relative;
+    top:50%; 
+    left:38%;
+    margin-bottom: 10px;
+
+}
+
+@media screen and (max-width: 480px) {
+    article {
+    	width: 400px;
+    	   
+	}
+    div {
+    	width: 100%;
+		float: left;
+		border: solid grey 1px;
+		margin-bottom: 20px;
+		padding:0 7px;
+
+    }
+    button {
+	width: 50px;
+	position:relative;
+    top:50%; 
+    left:45%;
+    margin-bottom: 10px;
+
+}
+}
